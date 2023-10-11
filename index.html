@@ -1,131 +1,676 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vybra Cunsult Limited</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
-    <style>
-        .load{
-         display: flex;
-         justify-content: center;
-        }
-.jelly-triangle {
-  --uib-size: 44px;
-  --uib-speed: 1.75s;
-  --uib-color: black;
 
-  position: relative;
-  height: var(--uib-size);
-  width: var(--uib-size);
-  filter: url('#uib-jelly-triangle-ooze');
-}
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vybra Consult Ltd.</title>
 
-.jelly-triangle__dot,
-.jelly-triangle::before,
-.jelly-triangle::after{
-  content: '';
-  position: absolute;
-  width: 33%;
-  height: 33%;
-  background: var(--uib-color);
-  border-radius: 100%;
-}
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
 
-.jelly-triangle__dot {
-  top: 6%;
-  left: 30%;
-  animation: grow var(--uib-speed) ease infinite;
-}
-
-.jelly-triangle::before {
-  bottom: 6%;
-  right: 0;
-  animation: grow var(--uib-speed) ease calc(var(--uib-speed) * -0.666)
-    infinite;
-}
-
-.jelly-triangle::after {
-  bottom: 6%;
-  left: 0;
-  animation: grow var(--uib-speed) ease calc(var(--uib-speed) * -0.333)
-    infinite;
-}
-
-.jelly-triangle__traveler {
-  position: absolute;
-  top: 6%;
-  left: 30%;
-  width: 33%;
-  height: 33%;
-  background: var(--uib-color);
-  border-radius: 100%;
-  animation: triangulate var(--uib-speed) ease infinite;
-}
-
-.jelly-maker {
-  width: 0;
-  height: 0;
-  position: absolute;
-}
-
-@keyframes triangulate {
-  0%,
-  100% {
-    transform: none;
-  }
-
-  33.333% {
-    transform: translate(120%, 175%);
-  }
-
-  66.666% {
-    transform: translate(-95%, 175%);
-  }
-}
-
-@keyframes grow {
-  0%,
-  100% {
-    transform: scale(1.5);
-  }
-
-  20%,
-  70% {
-    transform: none;
-  }
-}
-    </style>
-
-
-    <center><img src="logo.png" alt="logo" class="img-fluid"></center>
-    <center><h1>Site Under Construction</h1></center>
-    <div class="load">
-    <div class="jelly-triangle">
-        <div class="jelly-triangle__dot" ></div>
-        <div class="jelly-triangle__traveler" ></div>
-      </div>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     
-      <svg width="0" height="0" class="jelly-maker">
-        <defs>
-          <filter id="uib-jelly-triangle-ooze">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="7.3"
-              result="blur"
-            />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-              result="ooze"
-            />
-            <feBlend in="SourceGraphic" in2="ooze" />
-          </filter>
-        </defs>
-      </svg>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/vybra_2.png" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a href="#intro" class="smoothscroll">Welcome</a></li>
+                        <li><a href="#about" class="smoothscroll">About</a></li>
+                        <li><a href="#services" class="smoothscroll">Services</a></li>
+                        <li><a href="#folio" class="smoothscroll">Work</a></li>
+                        <li><a href="#footer" class="smoothscroll">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+                    <ul class="s-header__social">
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/vybra-consult/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                                <span class="u-screen-reader-text">Linkedin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/vybraconsult?igshid=MzMyNGUyNmU2YQ==">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                    </ul> <!-- s-header__social -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+            <!-- intro
+            ----------------------------------------------- -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="s-intro__bg"></div>
+
+                <div class="row s-intro__content">
+
+                    <div class="s-intro__content-bg"></div>
+
+                    <div class="column lg-12 s-intro__content-inner">
+                        
+                        <h1 class="s-intro__content-title" data-aos="fade-up">
+                            We Provide Holistic and strategic <br> Approach to help our customers thrive
+                        </h1>
+
+                        <div class="s-intro__content-buttons">
+                            <a href="#about" class="btn btn--stroke s-intro__content-btn smoothscroll">More About Us</a>
+                        </div>
+                        
+                    </div> <!-- s-intro__content-inner -->
+
+                </div> <!-- s-intro__content -->
+
+                <div class="s-intro__scroll-down">
+                    <a href="#about" class="smoothscroll">
+                        <span>Scroll Down</span>
+                    </a>
+                </div> <!-- s-intro__scroll-down -->
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- about
+            ----------------------------------------------- -->
+            <section id="about" class="s-about target-section">
+
+                <div class="row section-header" data-num="01">
+                    <h3 class="column lg-12 section-header__pretitle pretitle text-pretitle">Who We Are</h3>
+
+                        <h2 class="title text-display-1">
+                            We are a firm comprised of industry-specific experts, that strive to be a catalyst that seamlessly unlock potential solutions to meet the needs of our clients; by delivering integrated and sustainable solutions through leading edge management consulting, technology, and execution of coherent business objectives. 
+                            Using the latest technology we help businesses of every size advance and flourish by developing effective and intense  solutions custom-made  to your exclusive needs. 
+                        </h2>
+              
+                    <!-- <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                         
+                        </p>
+                    </div> -->
+                </div> <!-- end section-header -->
+
+            </section> <!-- end s-about -->
+
+
+            <!-- services
+            ----------------------------------------------- -->
+            <section id="services" class="s-services target-section">
+
+                <div class="row section-header" data-num="02" >
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">Why Choose us?</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1" >
+                            Our services are tailored to make your business grow and stand out.
+                        </h2>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div class="row services-list list-block block-lg-one-half block-tab-whole">
+    
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 160H320V128H448v32zM48 64C21.5 64 0 85.5 0 112v64c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zM448 352v32H192V352H448zM48 288c-26.5 0-48 21.5-48 48v64c0 26.5 21.5 48 48 48H464c26.5 0 48-21.5 48-48V336c0-26.5-21.5-48-48-48H48z"/></svg>  
+                            </div>
+                            <h3 class="h5">Project Management</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                our expertise runs through the lifecycle of projects including planning,Design,implementation,<br>Monitoring,Execution, and evaluation of Projects.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M352 96c0 14.3-3.1 27.9-8.8 40.2L396 227.4c-23.7 25.3-54.2 44.1-88.5 53.6L256 192h0 0l-68 117.5c21.5 6.8 44.3 10.5 68.1 10.5c70.7 0 133.8-32.7 174.9-84c11.1-13.8 31.2-16 45-5s16 31.2 5 45C428.1 341.8 347 384 256 384c-35.4 0-69.4-6.4-100.7-18.1L98.7 463.7C94 471.8 87 478.4 78.6 482.6L23.2 510.3c-5 2.5-10.9 2.2-15.6-.7S0 501.5 0 496V440.6c0-8.4 2.2-16.7 6.5-24.1l60-103.7C53.7 301.6 41.8 289.3 31.2 276c-11.1-13.8-8.8-33.9 5-45s33.9-8.8 45 5c5.7 7.1 11.8 13.8 18.2 20.1l69.4-119.9c-5.6-12.2-8.8-25.8-8.8-40.2c0-53 43-96 96-96s96 43 96 96zm21 297.9c32.6-12.8 62.5-30.8 88.9-52.9l43.7 75.5c4.2 7.3 6.5 15.6 6.5 24.1V496c0 5.5-2.9 10.7-7.6 13.6s-10.6 3.2-15.6 .7l-55.4-27.7c-8.4-4.2-15.4-10.8-20.1-18.9L373 393.9zM256 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                            </div>
+                            <h3 class="h5">Business Model Design</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                The act of designing a company’s business model. We research,ideate, model and evaluate business models together with you. 
+
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            </div>
+                            <h3 class="h5">Brands Management</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                Managing the tangibles and intangibles characteristics of your brand. We assemble marketing mix into a whole  so as to give you an identity. We create an image of an experienced, huge, successful and reliable business to help you capture the niche market for your product / service.
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M482.1 32H28.7C5.8 32 0 37.9 0 60.9v390.2C0 474.4 5.8 480 28.7 480h453.4c24.4 0 29.9-5.2 29.9-29.7V62.2c0-24.6-5.4-30.2-29.9-30.2zM178.4 220.3c-27.5-20.2-72.1-8.7-84.2 23.4-4.3 11.1-9.3 9.5-17.5 8.3-9.7-1.5-17.2-3.2-22.5-5.5-28.8-11.4 8.6-55.3 24.9-64.3 41.1-21.4 83.4-22.2 125.3-4.8 40.9 16.8 34.5 59.2 34.5 128.5 2.7 25.8-4.3 58.3 9.3 88.8 1.9 4.4.4 7.9-2.7 10.7-8.4 6.7-39.3 2.2-46.6-7.4-1.9-2.2-1.8-3.6-3.9-6.2-3.6-3.9-7.3-2.2-11.9 1-57.4 36.4-140.3 21.4-147-43.3-3.1-29.3 12.4-57.1 39.6-71 38.2-19.5 112.2-11.8 114-30.9 1.1-10.2-1.9-20.1-11.3-27.3zm286.7 222c0 15.1-11.1 9.9-17.8 9.9H52.4c-7.4 0-18.2 4.8-17.8-10.7.4-13.9 10.5-9.1 17.1-9.1 132.3-.4 264.5-.4 396.8 0 6.8 0 16.6-4.4 16.6 9.9zm3.8-340.5v291c0 5.7-.7 13.9-8.1 13.9-12.4-.4-27.5 7.1-36.1-5.6-5.8-8.7-7.8-4-12.4-1.2-53.4 29.7-128.1 7.1-144.4-85.2-6.1-33.4-.7-67.1 15.7-100 11.8-23.9 56.9-76.1 136.1-30.5v-71c0-26.2-.1-26.2 26-26.2 3.1 0 6.6.4 9.7 0 10.1-.8 13.6 4.4 13.6 14.3-.1.2-.1.3-.1.5zm-51.5 232.3c-19.5 47.6-72.9 43.3-90 5.2-15.1-33.3-15.5-68.2.4-101.5 16.3-34.1 59.7-35.7 81.5-4.8 20.6 28.8 14.9 84.6 8.1 101.1zm-294.8 35.3c-7.5-1.3-33-3.3-33.7-27.8-.4-13.9 7.8-23 19.8-25.8 24.4-5.9 49.3-9.9 73.7-14.7 8.9-2 7.4 4.4 7.8 9.5 1.4 33-26.1 59.2-67.6 58.8z"/></svg>
+                            </div>
+                            <h3 class="h5">Integrated Marketing Communication </h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                A key element used in unifying marketing communication elements, such as public relations, social media, audience analytics, business development principles, and advertising, into a brand identity that remains consistent across distinct media channels. We develop a cohesive marketing plan that allows our clients to deliver an engaging and seamless consumer experience for their product/ service, and to optimize an organization’s image and relationship with stakeholders.
+
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0H109.6C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.1 0 49.3-11.4 65.2-29c15.9 17.6 39.1 29 65.2 29c26.2 0 49.3-11.4 65.2-29c16 17.6 39.1 29 65.2 29c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4zM499.7 254.9l-.1 0c-5.3 .7-10.7 1.1-16.2 1.1c-12.4 0-24.3-1.9-35.4-5.3V384H128V250.6c-11.2 3.5-23.2 5.4-35.6 5.4c-5.5 0-11-.4-16.3-1.1l-.1 0c-4.1-.6-8.1-1.3-12-2.3V384v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V384 252.6c-4 1-8 1.8-12.3 2.3z"/></svg>
+                            </div>
+                            <h3 class="h5">Sales Management</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                We focus on the practical application of sales forecasting techniques and management that empowers our clients to meet and surpass their targets. We design ultimately tailored sales Management systems, that can effectively drive assess to sales cycles,competitiveness and effectiveness of sales campaigns and tools.
+
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                    <div class="column list-block__item">
+                        <div class="list-block__title">
+                            <div class="list-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V224v64V448c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384H64c-17.7 0-32-14.3-32-32V288c-17.7 0-32-14.3-32-32s14.3-32 32-32V160c0-17.7 14.3-32 32-32H96V64zm448 0v64h32c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32v64c0 17.7-14.3 32-32 32H544v64c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32V288 224 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32zM416 224v64H224V224H416z"/></svg>
+                            </div>
+                            <h3 class="h5">Training and Development</h3>
+                        </div>
+                        <div class="list-block__text">
+                            <p>
+                                There’s no end to the impact we make every time with our clients. Our training and development initiatives are educational activities specifically designed to improve the job performance of our clients. These programs typically involve advancing a worker's knowledge and skill sets and instilling greater motivation to enhance job performance. Our effectual training programs help employees learn and acquire new skills, as well as gain the professional knowledge required to progress their careers. 
+
+                            </p>
+                        </div>
+                    </div> <!-- end list-block__item -->
+        
+                </div> <!-- end process-list -->
+
+            </section> <!-- end s-services -->
+
+
+            <!-- portfolio
+            ----------------------------------------------- -->
+            <section id="folio" class="s-folio target-section">
+
+                <div class="row section-header light-on-dark" data-num="03">
+                    <h3 class="column lg-9 section-header__pretitle text-pretitle">Mission & Vision</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h3 class="title text-display-1">
+                            Vision
+                        </h3>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                            To Become the leading consulting firm in Africa, by providing a high performing global standard approach to support the strategic change agenda of organizations. 
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+                <div class="row section-header light-on-dark">
+                    <h3 class="column lg-9 section-header__pretitle text-pretitle"></h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h3 class="title text-display-1">
+                            Mision
+                        </h3>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                            Grow businesses and make them highly competitive within their space by Promoting  brand visibility and Increase their market share. 
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div class="row section-header light-on-dark">
+                    <h3 class="column lg-9 section-header__pretitle text-pretitle"></h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h3 class="title text-display-1">
+                            Core Values
+                        </h3>
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                       
+                    </div>
+                    <p class="desc">
+                        Our commitment to ethics and Integrity instills a common set of values and ethics in all employees and partners improving their cohesiveness and willingness to work together. 
+                        <br>
+                        <b class="values"> Trust</b> <br> We act in an ethical, transparent manner with trust, transparency, and confidentiality for our clients, and each other to consistently create the best possible outcomes. We strive to build positive and healthy relationships with ourselves and customers. 
+                        <br>
+                        <b class="values"> Teamwork</b><br> Our success is dependent upon the collective energy, intelligence, and contributions of all of our Team Members. We Work in effective teams which improves compelling and dynamic outcomes, increases professional satisfaction and provides crucial peer support.
+                        <br>
+                        <b class="values">Respect</b><br> Our major goal is to be highly respected as a leader in our areas of expertise. That starts with us respecting ourselves, each other, our clients and partners. It means giving due regard for the feelings, wishes, rights, and traditions of others.
+                        <br>
+                        <b class="values">Innovation</b><br> Vybra consult differentiates itself from other companies by continuously striving to innovate, improve, and making the impossible possible by delivering innovative solutions. 
+                        <br>
+                        <b class="values">Leadership</b><br> We believe that every team member is a leader who is ultimately responsible for customer happiness. We use our leadership principles every day, for new projects or deciding on the best approach to solving a problem. We lead to deliver outstanding customer service through our knowledge, skill, enthusiasm and operational excellence.
+
+                    </p>
+                </div> <!-- end section-header -->
+
+                
+          <!-- portfolio
+            ----------------------------------------------- -->
+            <section id="folio" class="s-folio target-section">
+
+                <div class="row section-header light-on-dark" data-num="03">
+                    <h3 class="column lg-12 section-header__pretitle text-pretitle">Our Team</h3>
+                    <div class="column lg-6 stack-on-1100 section-header__primary">
+                        <h2 class="title text-display-1">
+                            A United Front
+                    </div>
+                    <div class="column lg-6 stack-on-1100 section-header__secondary">
+                        <p class="desc">
+                            Teamwork doesn’t stop internally. When we partner with you, our team becomes an extension of yours. We share your priorities, challenges and vision. Let’s work Together!
+                        </p>
+                    </div>
+                </div> <!-- end section-header -->
+
+                <div id="bricks" class="row bricks">
+                    <div class="column lg-12 masonry">
+                        <div class="bricks-wrapper">
+
+                            <div class="grid-sizer"></div>
+
+                            <article class="brick brick--double entry">
+                                <a href="#modal-01" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/team/Peggy.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Peggy</div>
+                                        <h4 class="entry__title">Chief Executive Officer</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick brick--double entry">
+                                <a href="#modal-02" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/caffeine_and_tulips@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Brand Identity</div>
+                                        <h4 class="entry__title">Caffeine & Tulips</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-03" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/grayscale@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Product Design</div>
+                                        <h4 class="entry__title">Grayscale</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-04" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/lamp@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">E-Commerce</div>
+                                        <h4 class="entry__title">Lamp</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-05" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/tropical@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">Frontend Design</div>
+                                        <h4 class="entry__title">Tropical</h4>
+                                    </div>
+                                </a>
+                            </article> <!-- entry -->
+
+                            <article class="brick entry">
+                                <a href="#modal-06" class="entry__link">
+                                    <div class="entry__thumb">
+                                        <img src="images/folio/woodcraft@2x.jpg" alt="">
+                                    </div>
+                                    <div class="entry__info">
+                                        <div class="entry__cat">E-Commerce</div>
+                                        <h4 class="entry__title">Woodcraft</h4>
+                                    </div>
+                                </a>
+                            </article> 
+
+                        </div> <!-- end bricks-wrapper -->
+                    </div> <!-- end masonry -->
+                </div> <!-- end bricks -->
+
+
+                <!-- modal templates popup
+                -------------------------------------------- -->
+                <div id="modal-01" hidden>
+                    <div class="modal-popup">
+                        <img src="images/team/Peggy-modal.png" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Peggy</h5>
+                            <p>Peggy is the chief executive officer of Vybra Consult Ltd. She specializes in International Business Development and Project Management; and has extensive experience in health, and health policy management.  Since Vybra Consult’s founding, she has worked on projects around the world, with an emphasis on Africa and North America. 
+                                <!-- She is based in Accra and, with her team, provides transformative growth and development to businesses and stakeholders, responding quickly, strategically and decisively to their most complex and critical challenges. -->
+                                <!-- In her more than 10 years of experience, Peggy has combined her skills in business turnaround, strategic consulting, and stakeholder management in the development of performance improvement and accelerated transformation projects for many large and high-profile businesses. Before joining Vybra Consult, Peggy was the Operations Manager, Business Development Manager, and Medical Representative for many multinational and prestigious local companies.  She is also the TV Host for “Ask Your Pharmacist” Health show on TV3, GHONE, ETV etc… -->
+                               </p>
+                            <!-- <ul class="modal-popup__cat">
+                                <li>Peggy is a graduate of Providence College (USA) and the University of Ghana Business School. Long involved in philanthropic causes, she is the founder of The Women of Wonders (WOW) Foundation, she serves in a personal capacity on the board of the Global Sustainable Aid Project (GSAP), the advisory board of Dr. Steve Mecca Foundation and as a trustee of the Women’s Trust Organization. </li>
+                                <li>“For over a decade, Peggy has helped healthcare leaders bring to life performance improvement solutions and revenue cycle transformation initiatives.”</li>
+                            </ul> -->
+                        </div>
+            
+                        <a href="#" class="modal-popup__details">Read More</a>
+                    </div>
+                </div> <!-- end modal -->
+
+                 <div id="modal-02" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-tulips.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Caffeine & Tulips</h5>
+                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Brand Identity</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> <!-- end modal  -->
+
+                <!-- <div id="modal-03" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-grayscale.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Grayscale</h5>
+                            <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Product Design</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> end modal -->
+<!-- 
+                <div id="modal-04" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-lamp.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>The Lamp</h5>
+                            <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                            <ul class="modal-popup__cat">
+                                <li>E-Commerce</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> end modal -->
+<!-- 
+                <div id="modal-05" hidden>
+                    <div class="modal-popup">
+
+                        <img src="images/folio/gallery/g-tropical.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Tropical</h5>
+                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                            <ul class="modal-popup__cat">
+                                <li>Frontend Design</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> end modal -->
+
+                <!-- <div id="modal-06" hidden>
+                    <div class="modal-popup">
+                        <img src="images/folio/gallery/g-woodcraft.jpg" alt="">
+            
+                        <div class="modal-popup__desc">
+                            <h5>Woodcraft</h5>
+                            <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                            <ul class="modal-popup__cat">
+                                <li>E-Commerce</li>
+                                <li>Product Design</li>
+                            </ul>
+                        </div>
+            
+                        <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                    </div>
+                </div> end modal -->
+                        </div> <!-- clients-list -->
+                    </div> <!-- end column lg-12 -->
+                </div> <!-- end s-clients -->
+
+            </section> <!-- end s-folio -->
+
+
+
+
+
+
+                <!-- clients
+                -------------------------------------------- -->
+                <div class="s-clients row">
+                    <div class="column lg-12">
+
+                        <div class="row section-header">
+                            <div class="column lg-12">
+                                <h2 class="title text-display-1">Brands we have had priveledge to work with</h3>
+                            </div>
+                        </div> <!-- end section-header -->
+    
+                        <div class="row clients-list block-lg-one-fourth block-md-one-third block-tab-one-half block-stack">
+    
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <img src="images/clients/ageless.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="column clients-list__item">
+                                <a href="#0">
+                                    <img src="images/clients/rugnet.jpg" alt="">
+                                </a>
+                            </div>
+                        </div> <!-- clients-list -->
+                    </div> <!-- end column lg-12 -->
+                </div> <!-- end s-clients -->
+
+            </section> <!-- end s-folio -->
+
+        <!-- # site-footer
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row section-header" data-num="04">
+                <h3 class="column lg-12 section-header__pretitle text-pretitle">Get In Touch</h3>
+                <div class="column lg-6 stack-on-1100 section-header__primary">
+                    <h2 class="title text-display-1">
+                    Have an idea or an epic project in mind? Talk to us. 
+                    Let's work together and make something great. 
+                    Send us a mail <a href="mailto:#0">info@vybraconsultlimited.com</a>
+                    </h2>
+                </div>    
+                <div class="column lg-6 stack-on-1100 section-header__secondary">
+                    
+                    <div class="contact-block">
+                        <h6>Where To Find Us</h6>
+                        <p>
+                        21 Agushi Street,<br>
+                        Lashibi Comm. 17 ,<br>
+                        Tema Accra.
+                        </p>
+                    </div>
+
+                    <div class="contact-block">
+                        <h6>Contact Infos</h6>
+                        <ul class="contact-list">
+                            <li><a href="tel:+233554171114">+233 554171114</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row list-block block-lg-one-half block-tab-whole block-stack-on-1000 s-footer__btns">
+                <div class="column list-block__item">
+                    <div class="s-footer__contact-btn">
+                        <a href="mailto:info@vybraconsultlimited" class="btn btn--primary u-fullwidth">
+                            Let's Talk 
+                        </a>
+                    </div>
+                </div>
+                <div class="column list-block__item">
+                    <div class="subscribe-form s-footer__subscribe">
+                        <h6>Subscribe</h6>
+                        <form id="mc-form" class="mc-form">
+                            <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+                            <input type="submit" name="subscribe" value="Subscribe" class="btn btn--primary u-fullwidth">
+                            <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
+                            <div class="mc-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- end s-footer__btns -->
+
+            <div class="row s-footer__bottom">
+
+                <div class="column lg-6 tab-12 s-footer__bottom-left">
+                    <ul class="s-footer__social">
+                        <li>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                                <span class="u-screen-reader-text">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/vybra-consult/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                                <span class="u-screen-reader-text">Linkedin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/vybraconsult?igshid=MzMyNGUyNmU2YQ==">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column lg-6 tab-12 s-footer__bottom-right">
+                    <div class="ss-copyright">
+                        <span>© Copyright Vybra 2023</span> 
+                    </div>
+                </div>
+
+            </div> <!-- s-footer__bottom -->
+    
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+    
+        </footer> <!-- end footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="//code.tidio.co/asl3tfjvhvegkcjy4hdk50fcuslkvf7u.js" async></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
