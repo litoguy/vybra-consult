@@ -3182,7 +3182,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 800px) {
     .s-header {
-        --logo-width : 36px;
+        --logo-width : 30%;
         top          : var(--vspace-0_25);
     }
 
