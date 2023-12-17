@@ -30,6 +30,12 @@
         .logo-head{
            width:40%;
         }
+        .modal-body{
+          color: grey;
+        }
+        .modal-title{
+          color: grey;
+        }
     </style>
     <div class="navbar navbar-dark shadow-sm">
         <div class="container">
@@ -64,7 +70,7 @@
                       <p class="card-text"><b>Senior Manager</b> <br>To function as a Senior Manager for a company, a student is required.Not a lot of experience is required.To be eligible, all you need is a WASSCE Certificate.</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#apply1001" >View</button>
                           <button type="button" class="btn btn-sm btn-outline-secondary">Apply</button>
                         </div>
                         <small class="text-body-secondary">20/12/2023</small>
@@ -80,7 +86,7 @@
                         <p class="card-text"><b> Social Media Manager</b><br>We're looking for someone with at least five years of experience in the tech industry.</p>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#apply1002" >View</button>
                             <button type="button" class="btn btn-sm btn-outline-secondary">Apply</button>
                           </div>
                           <small class="text-body-secondary">19/12/2023</small>
@@ -97,7 +103,7 @@
                           <p class="card-text"><b>Senior Developer</b> <br>It takes a full stack developer and exceptional coding skills to fill this role.</p>
                           <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#apply1003" >View</button>
                               <button type="button" class="btn btn-sm btn-outline-secondary">Apply</button>
                             </div>
                             <small class="text-body-secondary">17/12/2023</small>
@@ -105,7 +111,68 @@
                         </div>
                       </div>
                     </div>
-    
+                      <!-- Button trigger modal -->
+                  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#apply1001">
+                    Launch demo modal
+                  </button> -->
+                  
+
+                  <!-- Modal Apply 101  -->
+                  <div class="modal fade" id="apply1001" tabindex="-1" aria-labelledby="apply1001Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="apply1001Label">Senior Manager</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          To function as a Senior Manager for a company, a student is required.Not a lot of experience is required.To be eligible, all you need is a WASSCE Certificate.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Apply Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                   <!-- Modal Apply 102  -->
+                   <div class="modal fade" id="apply1002" tabindex="-1" aria-labelledby="apply1002Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="apply1002Label">Social Media Manager</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          To function as a Senior Manager for a company, a student is required.Not a lot of experience is required.To be eligible, all you need is a WASSCE Certificate.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Apply Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modal Apply 103 -->
+                  <div class="modal fade" id="apply1003" tabindex="-1" aria-labelledby="apply1003Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="apply1003Label">Senior Developer</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          It takes a full stack developer and exceptional coding skills to fill this role.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Apply Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 
 
