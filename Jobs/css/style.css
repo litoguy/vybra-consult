@@ -1,0 +1,27 @@
+body{
+  background-color: #0a3b5e;
+}
+.container{
+  background-color: #0a3b5e;
+}
+.bg-body-tertiary{
+  background-color: #0a3b5e;
+}
+.text-center{
+  color: white;
+}
+.about-text{
+  color: white;
+}
+.logo{
+     width:10%;
+  }
+  .logo-head{
+     width:40%;
+  }
+  .modal-body{
+    color: grey;
+  }
+  .modal-title{
+    color: grey;
+  }
